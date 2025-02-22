@@ -62,4 +62,47 @@ def E13():
     x = datetime.strptime(x,'%d-%m-%Y')
     print(x.strftime("%a"))
 
-E13()
+a=1 #variable for infinite loop
+while (a != 0):
+    # comment: 
+    option = input("Please enter: ")
+    match (option):
+        case ('1'):
+            # comment: 
+            E1()
+        case ('2'):
+            # comment: 
+            E2()
+        case ('3'):
+            # comment: 
+            E3()
+        case ('4'):
+            # comment: 
+            E4()
+        case ('5'):
+            # comment: 
+            E5()
+        case ('6'):
+            # comment: 
+            E6()
+        case ('7'):
+            # comment: 
+            E7()
+        case ('8'):
+            # comment: 
+            E8()
+        case ('9'):
+            # comment: 
+            E9()
+        case ('10'):
+            # comment: 
+            E10()
+        case ('11'):
+            # comment: 
+            E11()
+        case ('12'):
+            # comment: 
+            E12()
+        case ('13'):
+            # comment: 
+            E13()
