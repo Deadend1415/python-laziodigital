@@ -58,14 +58,53 @@ def E12():
 # end def
 def E13():
     from datetime import datetime
-    x = input("Please enter in 'gg/mm/aa/ format: ")
+    x = input("Please enter in 'gg-mm-aa format: ")
     x = datetime.strptime(x,'%d-%m-%Y')
-    print(x.strftime("%a"))
-
+    match(x.strftime("%a")):
+        case ("Mon"):
+            # comment: 
+            print("Lunedi")
+        case ("Tue"):
+            # comment: 
+            print("Martedi")
+        case ("Wed"):
+            # comment: 
+            print("Mercoledi")
+        case ("Thu"):
+            # comment: 
+            print("Giovedi")
+        case ("Fri"):
+            # comment: 
+            print("Venerdi")
+        case ("Sat"):
+            # comment: 
+            print("Sabato")
+        case ("Sun"):
+            # comment: 
+            print("domenica")
+# end def
+def E14():
+    import random
+    lista= ["ciao", True, 25, "x"]
+    dictionary = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964}
+    res = random.choice(list(dictionary.items()))
+    print("elemento random dalla lista:",random.choice(lista))
+    print("elemento random dall dictionary:",res)
+# end def
+def E15():
+    import random
+    print("numero random",random.randrange(0,6))
+    print("numero random",random.randrange(5,10))
+    print("numero random",random.randrange(0,10))
+# end def
+################### MAIN #######################
 a=1 #variable for infinite loop
 while (a != 0):
     # comment: 
-    option = input("Please enter: ")
+    option = input("Please enter desired exercise number: ")
     match (option):
         case ('1'):
             # comment: 
@@ -106,3 +145,6 @@ while (a != 0):
         case ('13'):
             # comment: 
             E13()
+        case ('14'):
+            # comment: 
+            E14()
