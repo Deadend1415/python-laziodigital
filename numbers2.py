@@ -9,11 +9,11 @@ def E2():
     print(random.randrange(1,10))
 # end def
 def E3():
-    from numbers1 import somma
+    from numbers1_nuovo_modulo_ import somma
     print(somma(9,2))
 # end def
 def E4():
-    from numbers1 import lista_numeri
+    from numbers1_nuovo_modulo_ import lista_numeri
     for x in lista_numeri:
         # comment: 
         print(x)
@@ -96,10 +96,22 @@ def E14():
 # end def
 def E15():
     import random
+    from datetime import datetime, timedelta
     print("numero random",random.randrange(0,6))
     print("numero random",random.randrange(5,10))
     print("numero random",random.randrange(0,10))
+    #data randomica tra due intervalli ↓
+    date1 = datetime(2020, 1, 1)
+    date2 = datetime(2025, 12, 31)
+    delta = date2 - date1
+    random_days = random.randint(0, delta.days)
+
+    # Generate the random date
+    random_date = date1 + timedelta(days=random_days
+    )
+    print(random_date.date())
 # end def
+<<<<<<< HEAD
 
 def E17():
     import random
@@ -128,6 +140,17 @@ def E19():
     print("Giorno dell'anno",x.strftime("%a %Y"))
     print("Giorno dell mese",x.strftime("%d"))
 # end def
+=======
+def E16():
+    import random
+    lista = [1,3,"x0","Dan"]
+    print("before shuffle:",lista)
+    random.shuffle(lista)   
+    print(lista)
+
+# end def
+
+>>>>>>> f1a8e29 (Renamed numbers1 and added funcions E15 and 16)
 ################### MAIN #######################
 a=1 #variable for infinite loop
 while (a != 0):
@@ -176,9 +199,18 @@ while (a != 0):
         case ('14'):
             # comment: 
             E14()
+<<<<<<< HEAD
         case ('17'):
             # comment: 
             E17()
         case ('18'):
             # comment: 
             E18()
+=======
+        case ('15'):
+            # comment: 
+            E15()
+        case ('16'):
+            # comment: 
+            E16()
+>>>>>>> f1a8e29 (Renamed numbers1 and added funcions E15 and 16)
