@@ -1,0 +1,6 @@
+#la funzione read() può prendere come parametro un intero, rappresenta il numero di caratteri da leggere
+print(f.read(10))
+
+# esiste anche la funzione readline() --> viene utilizzata con testo su più righe:
+f= open("prova.txt", "r" )
+print(f.readline())
