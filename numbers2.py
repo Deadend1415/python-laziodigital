@@ -132,6 +132,17 @@ def E18():
     # end for
     print(new,"Lunghezza: ",len(new))
 # end def
+def E19():
+    import datetime
+    x = datetime.datetime.now()
+    print("Data e ora correnti",x)
+    print("Anno concorrente",x.strftime("%Y"))
+    print("Mese dell'anno",x.strftime("%B %Y"))
+    print("Numero settimana dell anno",x.strftime("%W"))
+    print("Giorno della settimana",x.strftime("%d"))
+    print("Giorno dell'anno",x.strftime("%a %Y"))
+    print("Giorno dell mese",x.strftime("%d"))
+# end def
 ################### MAIN #######################
 a=1 #variable for infinite loop
 while (a != 0):
