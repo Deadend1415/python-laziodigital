@@ -115,6 +115,23 @@ def E15():
     print("numero random",random.randrange(5,10))
     print("numero random",random.randrange(0,10))
 # end def
+
+def E17():
+    import random
+    print("numereo tra 0 e 1 :",random.randrange(0,1))
+    x = input("Input l'intervallo: ")
+    y = input("Input l'intervallo: ")
+    print("numereo tra 0 e 1 :",random.randrange(x,y))
+# end def
+def E18():
+    import random
+    new = []
+    for i in range(random.randrange(10)):
+        # comment: 
+        new.append(random.randrange(10))
+    # end for
+    print(new,"Lunghezza: ",len(new))
+# end def
 ################### MAIN #######################
 a=1 #variable for infinite loop
 while (a != 0):
@@ -163,3 +180,9 @@ while (a != 0):
         case ('14'):
             # comment: 
             E14()
+        case ('17'):
+            # comment: 
+            E17()
+        case ('18'):
+            # comment: 
+            E18()
