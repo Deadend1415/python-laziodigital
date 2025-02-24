@@ -111,8 +111,13 @@ def E15():
     )
     print(random_date.date())
 # end def
-<<<<<<< HEAD
-
+def E16():
+    import random
+    lista = [1,3,"x0","Dan"]
+    print("before shuffle:",lista)
+    random.shuffle(lista)   
+    print(lista)
+# end def
 def E17():
     import random
     print("numereo tra 0 e 1 :",random.randrange(0,1))
@@ -140,17 +145,6 @@ def E19():
     print("Giorno dell'anno",x.strftime("%a %Y"))
     print("Giorno dell mese",x.strftime("%d"))
 # end def
-=======
-def E16():
-    import random
-    lista = [1,3,"x0","Dan"]
-    print("before shuffle:",lista)
-    random.shuffle(lista)   
-    print(lista)
-
-# end def
-
->>>>>>> f1a8e29 (Renamed numbers1 and added funcions E15 and 16)
 ################### MAIN #######################
 a=1 #variable for infinite loop
 while (a != 0):
@@ -199,18 +193,15 @@ while (a != 0):
         case ('14'):
             # comment: 
             E14()
-<<<<<<< HEAD
-        case ('17'):
-            # comment: 
-            E17()
-        case ('18'):
-            # comment: 
-            E18()
-=======
         case ('15'):
             # comment: 
             E15()
         case ('16'):
             # comment: 
             E16()
->>>>>>> f1a8e29 (Renamed numbers1 and added funcions E15 and 16)
+        case ('17'):
+            # comment: 
+            E17()
+        case ('18'):
+            # comment: 
+            E18()
