@@ -1,7 +1,4 @@
-"""Hi John
-You are Gay 
-but why 
-John Xi Gay"""
+"""HI """
 print("--------------------------------------------------------------------------")
 #########################
 # Esercizio sulle variabli
