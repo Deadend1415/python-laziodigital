@@ -1,0 +1,9 @@
+import os
+import pickle
+
+# 🔴 Hardcoded secret
+SECRET = "topsecret123"
+
+# 🔴 Command injection
+def delete_file(name):
+    os.system(f"rm {name}")
