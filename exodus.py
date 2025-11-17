@@ -1,4 +1,4 @@
-#########################
+########################
 # Esercizio sulle tuple
 global_collecion = tuple(("mela","banana","kiwi"))
 global_dictionary = {
